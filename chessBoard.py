@@ -24,3 +24,6 @@ if __name__ == "__main__" :
             cb.begin_fill()
             draw()
             cb.end_fill()
+
+    cb.hideturtle()
+    turtle.done()
