@@ -14,4 +14,13 @@ if __name__ == "__main__" :
     for i in range(8):
         cb.up()
         cb.setpos(-100,30*i)
-        cb.down()
+        cb.down()      
+        for j in range(8):
+            if(i+j) % 2 == 0:
+                col = 'black'
+            else:
+                col = 'white'
+            cb.fillcolor(col)
+            cb.begin_fill()
+            draw()
+            cb.end_fill()
